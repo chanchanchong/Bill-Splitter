@@ -85,12 +85,10 @@ class BillSplitter:
             [self.friends.update({input(): 0}) for _ in range(self.n)]
             print("Enter the total bill value: ")
             self.bill = int(input())
-            each_bill = round(self.bill / self.n, 2) if (self.bill / self.n) % 1 != 0  else  round(self.bill / self.n) 
+            each_bill = round(self.bill / self.n, 2) if (self.bill / self.n) % 1 != 0 else round(self.bill / self.n)
             for f in self.friends:
-                self.friends[f] =  each_bill
+                self.friends[f] = each_bill
             print(self.friends)
-
-
 
 
 def main():
